@@ -1,0 +1,50 @@
+{
+  "name": "lacona-chrome-bookmarks",
+  "version": "1.0.0",
+  "description": "Lacona Addon that allows Lacona to access bookmarks in Google Chrome",
+  "main": "lib/index.js",
+  "lacona": {
+    "title": "Chrome Bookmarks",
+    "description": "Allow Lacona to access Google Chrome bookmarks",
+    "engine": ">=1.0.3"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "lacona",
+    "lacona-addon"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonhorst/lacona-chrome-bookmarks.git"
+  },
+  "dependencies": {
+    "elliptical": "^1.2.0",
+    "lacona-api": "^1.4.0",
+    "lacona-phrases": "^1.0.1",
+    "lacona-source-helpers": "^1.3.0",
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-cli": "^6.14.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-preset-es2015-node": "^6.1.1",
+    "rimraf": "^2.5.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node"
+    ],
+    "plugins": [
+      "transform-async-to-generator",
+      "syntax-async-functions",
+      "transform-react-jsx"
+    ]
+  }
+}
