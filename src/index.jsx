@@ -26,9 +26,7 @@ const FETCH_SCRIPT = `
 `
 
 async function fetchChromeBookmarks () {
-  console.log('doing', FETCH_SCRIPT)
   const result = await runApplescript({script: FETCH_SCRIPT})
-  console.log('r', result)
   const tabs = _.chain(result || [])
     .map(item => ({
       id: item[0],
@@ -36,8 +34,6 @@ async function fetchChromeBookmarks () {
       url: item[2]
     }))
     .value()
-
-  console.log(tabs)
 
   return tabs
 }
