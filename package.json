@@ -6,7 +6,12 @@
   "lacona": {
     "title": "Chrome Bookmarks",
     "description": "Allow Lacona to access Google Chrome bookmarks",
-    "engine": ">=1.0.3"
+    "engine": ">=1.0.3",
+    "icon": "img/Chrome-Modified-96.png",
+    "examples": [
+      "open [Lacona Homepage](bookmark)",
+      "open [Twitter](bookmark) in [![](img/Chrome-96.png)Chrome](application)"
+    ]
   },
   "scripts": {
     "build": "babel src --out-dir lib",
