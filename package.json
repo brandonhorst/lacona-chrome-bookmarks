@@ -1,18 +1,17 @@
 {
   "name": "lacona-chrome-bookmarks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lacona Addon that allows Lacona to access bookmarks in Google Chrome",
   "main": "lib/index.js",
   "lacona": {
     "title": "Chrome Bookmarks",
     "description": "Allow Lacona to access Google Chrome bookmarks",
-    "engine": ">=1.0.3",
+    "engine": ">=1.1.0",
     "iconURL": "https://raw.githubusercontent.com/brandonhorst/lacona-chrome-bookmarks/master/icon.png",
     "examples": [
       "open [Lacona Homepage](bookmark)",
       "open [Twitter](bookmark) in [![](https://raw.githubusercontent.com/brandonhorst/lacona-chrome-bookmarks/master/img/Chrome-96.png)Chrome](application)"
-    ],
-    "engine": ">=1.1.0"
+    ]
   },
   "scripts": {
     "build": "babel src --out-dir lib",
