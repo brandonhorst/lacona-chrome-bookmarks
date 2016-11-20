@@ -7,10 +7,10 @@
     "title": "Chrome Bookmarks",
     "description": "Allow Lacona to access Google Chrome bookmarks",
     "engine": ">=1.0.3",
-    "icon": "img/Chrome-Modified-96.png",
+    "iconURL": "https://raw.githubusercontent.com/brandonhorst/lacona-chrome-bookmarks/master/icon.png",
     "examples": [
       "open [Lacona Homepage](bookmark)",
-      "open [Twitter](bookmark) in [![](img/Chrome-96.png)Chrome](application)"
+      "open [Twitter](bookmark) in [![](https://raw.githubusercontent.com/brandonhorst/lacona-chrome-bookmarks/master/img/Chrome-96.png)Chrome](application)"
     ]
   },
   "scripts": {
