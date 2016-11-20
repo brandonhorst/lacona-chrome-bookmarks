@@ -11,7 +11,8 @@
     "examples": [
       "open [Lacona Homepage](bookmark)",
       "open [Twitter](bookmark) in [![](https://raw.githubusercontent.com/brandonhorst/lacona-chrome-bookmarks/master/img/Chrome-96.png)Chrome](application)"
-    ]
+    ],
+    "engine": ">=1.1.0"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
